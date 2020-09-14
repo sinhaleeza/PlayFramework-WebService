@@ -1,0 +1,40 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET     /stylesheets/*file          @controllers.Assets.at(path="/public/stylesheets",file)
+GET     /javascripts/*file          @controllers.Assets.at(path="/public/javascripts",file)
+GET     /stylesheets/images/*file          @controllers.Assets.at(path="/public/stylesheets/images",file)
+GET     /images/*file          @controllers.Assets.at(path="/public/images",file)
+
+GET    /                           controllers.SOCQueryController.query1()
+GET    /query1                     controllers.SOCQueryController.query1()
+GET    /query2                     controllers.SOCQueryController.query2()
+GET    /query3                     controllers.SOCQueryController.query3()
+GET    /query4                     controllers.SOCQueryController.query4()
+GET    /query5                     controllers.SOCQueryController.query5()
+GET    /query6                     controllers.SOCQueryController.query6()
+GET    /query7                     controllers.SOCQueryController.query7()
+GET    /query8                     controllers.SOCQueryController.query8()
+GET    /query9                     controllers.SOCQueryController.query9()
+
++nocsrf
+POST    /query1Handler              controllers.SOCQueryController.query1Handler(paperName: String = "")
++nocsrf
+POST    /query2Handler              controllers.SOCQueryController.query2Handler(paperName: String = "")
++nocsrf
+POST    /query3Handler              controllers.SOCQueryController.query3Handler()
++nocsrf
+GET    /query4Handler              controllers.SOCQueryController.query4Handler()
++nocsrf
+POST    /query5Handler              controllers.SOCQueryController.query5Handler()
++nocsrf
+GET    /query6Handler              controllers.SOCQueryController.query6Handler()
++nocsrf
+POST    /query7Handler              controllers.SOCQueryController.query7Handler()
++nocsrf
+GET    /query8Handler              controllers.SOCQueryController.query8Handler()
+
+POST    /query9Handler              controllers.SOCQueryController.query9Handler()
+      

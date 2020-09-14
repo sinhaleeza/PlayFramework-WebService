@@ -1,0 +1,97 @@
+@(conferenceLocations: List[String])
+<!doctype html>
+<html lang="en">
+    <head>
+            <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial- scale=1, shrink-to-fit=no">
+@*        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">*@
+
+
+        <title>Query9</title>
+        <link rel="stylesheet" media="screen" href="/stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" media="screen" href="/stylesheets/google-font-robotoSlab.css">
+
+        <script src="/javascripts/jquery-3.4.1.slim.min.js"></script>
+        <script src="/javascripts/popper.min.js"></script>
+        <script src="/javascripts/bootstrap.min.js"></script>
+            <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <link rel="stylesheet" media="screen" href="/stylesheets/leaflet.css"/>
+        <script src="/javascripts/leaflet.js"/>
+        <script defer src="/javascripts/map.js"></script>
+
+        <title>Query9</title>
+    </head>
+    <body>
+        <br>
+        <div class="container">
+            <table>
+                <tr>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text text-white">
+                        <form method="get" action="">
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query1" class="text-white"><b>Query1</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query2" class="text-white"><b>Query2</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query3" class="text-white"><b>Query3</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query4" class="text-white"><b>Query4</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query5" class="text-white"><b>Query5</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query6" class="text-white"><b>Query6</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query7" class="text-white"><b>Query7</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query8" class="text-white"><b>Query8</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query9" class="text-white"><b>Query9</b></a></button>
+                        </form>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                <br>
+                <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">Query 9 - Conference locations</a>
+                </nav>
+
+                <br>
+
+                <form method="post" action="/query9Handler">
+                    <div class="form-group">
+                        <label for="conferenceName"><b>ConferenceName *</b></label>
+                        <input type="text" name="conferenceName" class="form-control" id="conferenceName" required>
+                        <br>
+                        <label for="yearStart"><b>Year Range Start *</b></label>
+                        <input type="text" name="yearStart" class="form-control" id="yearStart" required>
+                        <br>
+                        <label for="yearEnd"><b>Year Range End *</b></label>
+                        <input type="text" name="yearEnd" class="form-control" id="yearEnd" required>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-info btn-block">Submit</button>
+                    <br><br>
+                </form>
+
+                @if(conferenceLocations.size() > 0){
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Conference Locations :</h5>
+                            <p class="card-text text-white">
+                            <ul>
+                                @for(conferenceLocation <- conferenceLocations){
+                                    <li class="text-white">   @conferenceLocation </li>
+                                }
+                            </ul>
+
+                            </p>
+                            <form method="get" action="http://localhost:9002/map">
+                                <input type="hidden" name="conferenceLocations" class="form-control" id="conferenceLocations" value="@conferenceLocations">
+                                <button type="submit" class="btn btn-lg btn-info btn-block">Display Map</button>
+                                <br><br>
+                            </form>
+
+                        </div>
+                    </div>
+                    <br>
+                }
+                </tr>
+            </table>
+        </div>
+
+    </body>
+</html>

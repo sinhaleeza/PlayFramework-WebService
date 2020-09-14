@@ -1,0 +1,72 @@
+@(coAuthorsList: List[String])
+<!doctype html>
+<html lang="en">
+    <head>
+            <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial- scale=1, shrink-to-fit=no">
+
+        <title>Query8</title>
+        <link rel="stylesheet" media="screen" href="/stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" media="screen" href="/stylesheets/google-font-robotoSlab.css">
+
+        <script src="/javascripts/jquery-3.4.1.slim.min.js"></script>
+        <script src="/javascripts/popper.min.js"></script>
+        <script src="/javascripts/bootstrap.min.js"></script>
+        <title>Query8</title>
+    </head>
+    <body>
+        <br>
+        <div class="container">
+            <table>
+                <tr>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text text-white">
+                        <form method="get" action="">
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query1" class="text-white"><b>Query1</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query2" class="text-white"><b>Query2</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query3" class="text-white"><b>Query3</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query4" class="text-white"><b>Query4</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query5" class="text-white"><b>Query5</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query6" class="text-white"><b>Query6</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query7" class="text-white"><b>Query7</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query8" class="text-white"><b>Query8</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query9" class="text-white"><b>Query9</b></a></button>
+                        </form>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                <br>
+                <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">Query 8 - CoAuthors of Authors with More than 10 publications</a>
+                </nav>
+
+                <br>
+
+                <form method="GET" action="@routes.SOCQueryController.query8Handler()">
+                    <button type="submit" class="btn btn-lg btn-info btn-block">List of CoAuthors of Popular Authors</button>
+                    <br><br>
+                </form>
+                @if(coAuthorsList.length > 0){
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">CoAuthors of Popular authors are :</h5>
+                            <p class="card-text">
+                            <ul>
+                            @for(coAuthors <- coAuthorsList){
+                                <li class="text-white">   @coAuthors </li>
+                            }
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    }
+                </tr>
+            </table>
+        </div>
+
+    </body>
+</html>

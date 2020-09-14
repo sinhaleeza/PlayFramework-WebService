@@ -1,0 +1,79 @@
+@(papersList: List[String])
+<!doctype html>
+<html lang="en">
+    <head>
+            <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial- scale=1, shrink-to-fit=no">
+
+        <title>Query7</title>
+        <link rel="stylesheet" media="screen" href="/stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" media="screen" href="/stylesheets/google-font-robotoSlab.css">
+
+        <script src="/javascripts/jquery-3.4.1.slim.min.js"></script>
+        <script src="/javascripts/popper.min.js"></script>
+        <script src="/javascripts/bootstrap.min.js"></script>
+        <title>Query7</title>
+    </head>
+    <body>
+        <br>
+        <div class="container">
+            <table>
+                <tr>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text text-white">
+                        <form method="get" action="">
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query1" class="text-white"><b>Query1</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query2" class="text-white"><b>Query2</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query3" class="text-white"><b>Query3</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query4" class="text-white"><b>Query4</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query5" class="text-white"><b>Query5</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query6" class="text-white"><b>Query6</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query7" class="text-white"><b>Query7</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query8" class="text-white"><b>Query8</b></a></button>
+                            <button type="button" class="btn btn-sm btn-info btn-inline"><a href="/query9" class="text-white"><b>Query9</b></a></button>
+                        </form>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                <br>
+                <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">Query 7 - List Author's publication metadata</a>
+                </nav>
+
+                <br>
+
+                <form method="post" action="@routes.SOCQueryController.query7Handler()">
+                    <div class="form-group">
+                        <label for="author"><b>Author *</b></label>
+                        <input type="text" name="author" class="form-control" id="author" required>
+                        <br>
+                        <label for="year"><b>Year *</b></label>
+                        <input type="text" name="year" class="form-control" id="year" required>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-info btn-block">Submit</button>
+                    <br><br>
+                </form>
+                @if(papersList.length > 0){
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Author's publications in the year :</h5>
+                            <p class="card-text">
+                            <ul>
+                            @for(paper <- papersList){
+                                <li class="text-white">   @paper </li>
+                            }
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                }
+                </tr>
+            </table>
+        </div>
+
+    </body>
+</html>

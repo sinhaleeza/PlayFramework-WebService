@@ -1,0 +1,53 @@
+@(conferenceLocations: List[String])
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quick Start - Leaflet</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+        <script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=qAq7G9gfqyiJOzkjx8gxcugMGOlFg0ir"></script>
+        <script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-geocoding.js?key=qAq7G9gfqyiJOzkjx8gxcugMGOlFg0ir"></script>
+
+    </head>
+    <body>
+
+        <div id="map" style="width: 800px; height: 500px; margin-left: 250px"></div>
+        <script>
+        var locPin = '';
+        var map = L.map('map', {
+            layers: MQ.mapLayer()
+        });
+
+        var urlString = window.location.href;
+        var url=new URL(urlString);
+        var searchParams = url.searchParams;
+        var conferenceLocations = searchParams.get("conferenceLocations");
+        if(conferenceLocations != null){
+            conferenceLocations = conferenceLocations.replace("[","").replace("]","");
+            var locationsList = conferenceLocations.split(",");
+            for(var i = 0 ; i < locationsList.length; i++){
+                console.log(locationsList[i]);
+                MQ.geocode({ map: map })
+                        .search(locationsList[i].replace("|",","));
+            }
+        }else{
+            MQ.geocode({ map: map })
+                    .search("Santa Clara, USA, CA");
+        }
+
+</script>
+        <br>
+        <form method="get" action="http://localhost:9001/query9">
+            <button type="submit" style="display: inline-block;
+                font-weight: 400;color: white;text-align: center;
+                vertical-align: middle;  margin-left: 250px;
+                border-radius: .25rem;background-color: #e4a3d4;
+                border-color: #e4a3d4;"><b>Go back to query</b></button>
+            <br><br>
+        </form>
+    </body>
+</html>
+

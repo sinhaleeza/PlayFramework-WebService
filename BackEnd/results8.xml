@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE dblp SYSTEM "dblp.dtd">
+<dblp><inproceedings mdate="2017-05-26" key="conf/efdbs/HohensteinE99">
+   <author>Uwe Hohenstein</author>
+   <author>Andreas Ebert</author>
+   <title>An Integrated Toolkit for Building Database Federations.</title>
+   <pages>43-60</pages>
+   <year>1999</year>
+   <crossref>conf/efdbs/1999</crossref>
+   <booktitle>EFIS</booktitle>
+   <url>db/conf/efdbs/efis99.html#HohensteinE99</url>
+</inproceedings></dblp>

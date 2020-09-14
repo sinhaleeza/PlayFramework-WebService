@@ -1,0 +1,132 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: jZkb0IXbvcg40vmG4FeeOzGzLgCVk
+ hYgXkaFQmbBHwE=
+SHA-256-Digest-Manifest: RhXdqF/SuRCl0kjY+MwDcikpzI4+fGcksBJLLMgIcnk=
+Created-By: 1.7.0_51 (Oracle Corporation)
+
+Name: javax/xml/xquery/XQResultSequence.class
+SHA-256-Digest: GA1SLHK7liNPh996+axbJQb2RZEsftjnc4fTgAGtkp0=
+
+Name: com/saxonica/xqj/Closable.class
+SHA-256-Digest: drXCD/jZDxuxcFbCZ1/yuLky3BDrCDYqqmuOQR6RjPU=
+
+Name: com/saxonica/xqj/SaxonXQConnection.class
+SHA-256-Digest: r2W5tELDpCJvepzo0PPA6Fh8Unj2vouv004WRmioC6I=
+
+Name: com/saxonica/xqj/SaxonXQMetaData.class
+SHA-256-Digest: s4srhsI8TLCt2QdLq5onHe0dq9acYVUGsJeb3d19RyA=
+
+Name: javax/xml/xquery/XQItemAccessor.class
+SHA-256-Digest: lkyLs8Vqc8V6vB9+k8/xz+Hp1poYPK8HnBQSX6PB3nM=
+
+Name: com/saxonica/xqj/SaxonXQItemAccessor.class
+SHA-256-Digest: FiP1jsmLXEIw5SpuQEB+vXhqWou3D4BCBY5B7HqltYA=
+
+Name: javax/xml/xquery/XQException.class
+SHA-256-Digest: EduXbdrSFCrkNm/Qv4Oujh7JQZkc5842YSa2zvDOJDA=
+
+Name: javax/xml/xquery/XQItem.class
+SHA-256-Digest: eHQRaIGji2PU4lOHToja2Zcw1F1LV0GhmftOi9Z4J/w=
+
+Name: javax/xml/xquery/XQCancelledException.class
+SHA-256-Digest: 6NDhx1kkZnKM+BL4OEfCodsRzUzeSS35im/ViWYqca8=
+
+Name: com/saxonica/xqj/StandardObjectConverter.class
+SHA-256-Digest: 9vZml7MsvNHBgbnFt1OJeiPGjfu3c77jsRoLKsAVaAw=
+
+Name: javax/xml/xquery/XQQueryException.class
+SHA-256-Digest: Gyjp2tvIc8+74nOU+oxvOQYY3+oTZ6TzZF0V8XWKCaw=
+
+Name: javax/xml/xquery/XQExpression.class
+SHA-256-Digest: QM+HF5kFHy//id2WekCD0MegLwe2kJP/sIN492XUx0I=
+
+Name: javax/xml/xquery/XQStackTraceElement.class
+SHA-256-Digest: wvfr9Ms4kwsQJLoj/RGmIn2MI/ir96FvfA0GNjTgIyY=
+
+Name: com/saxonica/xqj/SaxonXQSequenceType.class
+SHA-256-Digest: wUH0VkPJw0u1yeJexBEI9leqb7zLFOXNYVf9+m6MCeg=
+
+Name: javax/xml/xquery/ConnectionPoolXQDataSource.class
+SHA-256-Digest: BCgmIhoTwcXeWn8SjVGokVrS3Xb+8n3lz/NE6kDcPuU=
+
+Name: javax/xml/xquery/XQPreparedExpression.class
+SHA-256-Digest: xqrN4NhjDcizCZMJPQ98EZf0Yt/ULB3ikKdkM+9sJ48=
+
+Name: com/saxonica/xqj/SaxonXQForwardSequence.class
+SHA-256-Digest: 2UP/YwG2essG/7hRdZ0adh54XmJZiLd44I2h49RGui4=
+
+Name: javax/xml/xquery/XQDynamicContext.class
+SHA-256-Digest: iLSyoKiEW5Ip/wsWNKBHTtvqWYM4P7rHN4IoNIyaPYI=
+
+Name: com/saxonica/xqj/SaxonXQPreparedExpression.class
+SHA-256-Digest: VzyT0H2KpRZlTADx5viEO+9M5Jmc06H2pU2X16Q4wGA=
+
+Name: javax/xml/xquery/XQSequence.class
+SHA-256-Digest: EZ1lAps7xdo+sQfnl7PHtyev1yn0XS0sZoycYTY5e34=
+
+Name: javax/xml/xquery/PooledXQConnection.class
+SHA-256-Digest: oeFw4LObyfzOafkO2e/mOdvMFKiFcE6UnbCxzpu2ZCQ=
+
+Name: javax/xml/xquery/XQStackTraceVariable.class
+SHA-256-Digest: nT/x6oLl4O1Fj4IycGePbu+mEVzUDpm774eUqxa63DQ=
+
+Name: com/saxonica/xqj/SaxonXQDataFactory.class
+SHA-256-Digest: hqH/E7AtX1ORaJFEkWcS8wxHWHbW/gSrAsdxZc25Yyw=
+
+Name: com/saxonica/xqj/SaxonXQSequence.class
+SHA-256-Digest: 3D1UwQ7ak8j2tEq5H4ZHJN1P7MTWFiNCc1b5GlhEu7o=
+
+Name: javax/xml/xquery/XQItemType.class
+SHA-256-Digest: DwwiuQlYI8liUP36+OrqblMG1om8ZGgFFwsvoyJwVxg=
+
+Name: com/saxonica/xqj/SaxonXQItemType.class
+SHA-256-Digest: 5MfOYFfJizN7x/xfxI8na5bAQY4093g2MxzoMIbld/s=
+
+Name: javax/xml/xquery/XQDataSource.class
+SHA-256-Digest: 4O1XdXiuQEM4ZpkAximIG9bjLQ9u/++iz18Gf6KYGRI=
+
+Name: javax/xml/xquery/XQMetaData.class
+SHA-256-Digest: dNHay0ndkaG2F/PI7GFMmtzKF/5lQURzAZWtfmX8I6w=
+
+Name: javax/xml/xquery/XQConnectionEventListener.class
+SHA-256-Digest: yog2SFWYy2hvdHxoA7BGoVKsLvUpgytOCuDJHPfnViE=
+
+Name: com/saxonica/xqj/SaxonXQItem.class
+SHA-256-Digest: 53IMRp1znPyKGU4Q2jN517u3hSM4jS5a2josyYV7cnY=
+
+Name: javax/xml/xquery/XQConstants.class
+SHA-256-Digest: J8BeLQzMTqomtDrOkha5nseCj3z11SaWxQS1X+L8PP0=
+
+Name: javax/xml/xquery/XQDataFactory.class
+SHA-256-Digest: d0Xxn3X3024oaRkfn8Gktp+reWXbfpVXSeGMLAFxx0A=
+
+Name: javax/xml/xquery/XQSequenceType.class
+SHA-256-Digest: zg8dZScDWyKS5+Gs4uwB4erldvpqyBDuoxCOUxjNNtE=
+
+Name: com/saxonica/xqj/SaxonXQStaticContext.class
+SHA-256-Digest: +dxERnNWcshI9QocyMAswQm+qTF6AItCBvVubJza9mY=
+
+Name: com/saxonica/xqj/ObjectConverter.class
+SHA-256-Digest: BN7ZhthX5qmHj49JpiktkX3s4BahqQUryjs9mDd34e0=
+
+Name: com/saxonica/xqj/SaxonXQDynamicContext.class
+SHA-256-Digest: IbEHvIDhAp7DlRgWSb2aYXItkxcRyqzMETadfg9Gako=
+
+Name: javax/xml/xquery/XQConnectionEvent.class
+SHA-256-Digest: D0ukn2YUFH04IP3hcFD0xMaHMXv8fLyxVV1vD8xoezk=
+
+Name: javax/xml/xquery/XQConnection.class
+SHA-256-Digest: J0LMddWOomqF0eW6SlDTW4JS+9nfGo9JOQSM2GUrmWE=
+
+Name: com/saxonica/xqj/SaxonXQExpression.class
+SHA-256-Digest: R4zcr+CQnnSGVYSljb7AJY1gkK24FTaiKdvjpPkEeCw=
+
+Name: com/saxonica/xqj/SaxonXQDataSource.class
+SHA-256-Digest: D8G2sSehaMA5yR39y/LDw7PFZcRxos3ptHjDMV5dCdI=
+
+Name: javax/xml/xquery/XQResultItem.class
+SHA-256-Digest: FYtizMqAqInpaRkehzxkT0ao6m0KZiZRPOsB0umlH4s=
+
+Name: javax/xml/xquery/XQStaticContext.class
+SHA-256-Digest: BVYDDkfsYTveH9D8ViB73K7SghiRIhr+k41Gu/MBqu0=
+
